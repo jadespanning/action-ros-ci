@@ -648,7 +648,12 @@ done`;
 	}
 
 	await execShellCommand(
-		["ros2", "launch", "src/bos/launch/local.launch.py"],
+		[
+			...colconCommandPrefix,
+			"ros2",
+			"launch",
+			"src/bos/launch/local.launch.py",
+		],
 		options,
 		false
 	);
