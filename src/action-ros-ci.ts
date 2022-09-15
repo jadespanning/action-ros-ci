@@ -652,7 +652,7 @@ done`;
 			...colconCommandPrefix,
 			"ros2",
 			"launch",
-			"src/bos/launch/local.launch.py",
+			"bos/launch/local.launch.py",
 		],
 		options,
 		false
