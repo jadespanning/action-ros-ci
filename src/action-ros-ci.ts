@@ -647,6 +647,12 @@ done`;
 		core.info("Skipping tests");
 	}
 
+	await execShellCommand(
+		["ros2", "launch", "src/bos/launch/local.launch.py"],
+		options,
+		false
+	);
+
 	if (importToken !== "") {
 		// Unset config so that it doesn't leak to other actions
 		await execShellCommand(
